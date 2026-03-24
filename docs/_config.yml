@@ -1,0 +1,95 @@
+# Jekyll Configuration for Icon Converter
+
+# Site settings
+title: "محول الأيقونات - Icon Converter"
+description: "تطبيق ويب احترافي لتحويل الصور إلى أيقونات مع دعم كامل لأدوات الوصول"
+baseurl: ""
+url: "https://yourusername.github.io/icon-converter"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Include files
+include:
+  - _pages
+  - assets
+  - "*.html"
+  - "*.css"
+  - "*.js"
+  - "*.json"
+  - "*.xml"
+  - "*.md"
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - README.md
+  - DEPLOY.md
+  - PROJECT_INFO.md
+  - package.json
+  - package-lock.json
+  - .eslintrc.json
+  - prettier.config.js
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# PWA settings
+pwa:
+  name: "محول الأيقونات"
+  short_name: "Icon Converter"
+  description: "تطبيق ويب لتحويل الصور إلى أيقونات بأحجام متعددة"
+  background_color: "#4A90E2"
+  theme_color: "#4A90E2"
+  display: "standalone"
+  orientation: "portrait"
+
+# SEO settings
+lang: ar
+direction: rtl
+author: "أحمد عنتر"
+email: "ahmed30anter@gmail.com"
+
+# Social media
+twitter:
+  username: buytuk
+  card: summary
+
+facebook:
+  app_id: ""
+  publisher: ""
+  admins: ""
+
+# Google Analytics
+google_analytics: ""
+
+# Compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false

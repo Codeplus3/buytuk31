@@ -1,0 +1,61 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "محول الأيقونات" }}</title>
+    
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description | default: "تطبيق ويب احترافي لتحويل الصور إلى أيقونات" }}{% endif %}">
+    <meta name="author" content="{{ site.author | default: "أحمد عنتر" }}">
+    <meta name="keywords" content="محول أيقونات, تحويل صور, PWA, أدوات وصول, عربي, RTL">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "محول الأيقونات" }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description | default: "تطبيق ويب احترافي لتحويل الصور إلى أيقونات" }}{% endif %}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "محول الأيقونات" }}">
+    <meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description | default: "تطبيق ويب احترافي لتحويل الصور إلى أيقونات" }}{% endif %}">
+    <meta property="twitter:image" content="{{ site.url }}/assets/images/og-image.png">
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="{{ site.pwa.theme_color | default: "#4A90E2" }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="{{ site.pwa.short_name | default: "Icon Converter" }}">
+    <meta name="application-name" content="{{ site.pwa.name | default: "محول الأيقونات" }}">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+    <link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | relative_url }}" color="{{ site.pwa.theme_color | default: '#4A90E2' }}">
+    <meta name="msapplication-TileColor" content="{{ site.pwa.theme_color | default: '#4A90E2' }}">
+    <meta name="msapplication-config" content="{{ '/browserconfig.xml' | relative_url }}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    {% if site.google_analytics %}
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+</head>

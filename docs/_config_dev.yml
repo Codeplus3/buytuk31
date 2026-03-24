@@ -1,0 +1,90 @@
+# Development Configuration for Icon Converter Jekyll Site
+
+# Site settings
+title: "محول الأيقونات - Development"
+description: "تطبيق ويب احترافي لتحويل الصور إلى أيقونات مع دعم كامل لأدوات الوصول"
+baseurl: "/icon-converter"
+url: "http://localhost:4000"
+
+# Development settings
+livereload: true
+incremental: true
+profile: true
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Development plugins
+plugins_dir: _plugins
+layouts_dir: _layouts
+includes_dir: _includes
+
+# Include files
+include:
+  - _pages
+  - assets
+  - "*.html"
+  - "*.css"
+  - "*.js"
+  - "*.json"
+  - "*.xml"
+  - "*.md"
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - README.md
+  - DEPLOY.md
+  - PROJECT_INFO.md
+  - package.json
+  - package-lock.json
+  - .eslintrc.json
+  - prettier.config.js
+  - _config_dev.yml
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Development server
+host: localhost
+port: 4000
+
+# Debug settings
+show_dir_listing: false
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: expanded
+
+# Pagination (if needed)
+paginate: 5
+paginate_path: "/page:num/"
+
+# Timezone
+timezone: Africa/Cairo
+
+# Encoding
+encoding: utf-8

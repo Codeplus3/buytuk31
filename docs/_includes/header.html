@@ -1,0 +1,46 @@
+<header class="site-header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="{{ '/' | relative_url }}" class="brand-link">
+                    <i class="fas fa-image"></i>
+                    <span>{{ site.pwa.name | default: "محول الأيقونات" }}</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+                <a href="{{ '/features/' | relative_url }}" class="nav-link {% if page.url contains '/features/' %}active{% endif %}">
+                    <i class="fas fa-star"></i>
+                    <span>المميزات</span>
+                </a>
+                <a href="{{ '/about/' | relative_url }}" class="nav-link {% if page.url contains '/about/' %}active{% endif %}">
+                    <i class="fas fa-info-circle"></i>
+                    <span>حول</span>
+                </a>
+                <a href="{{ '/contact/' | relative_url }}" class="nav-link {% if page.url contains '/contact/' %}active{% endif %}">
+                    <i class="fas fa-envelope"></i>
+                    <span>اتصل بنا</span>
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <button class="toggle-btn" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const toggleBtn = document.querySelector('.toggle-btn i');
+    
+    navMenu.classList.toggle('active');
+    toggleBtn.classList.toggle('fa-bars');
+    toggleBtn.classList.toggle('fa-times');
+}
+</script>

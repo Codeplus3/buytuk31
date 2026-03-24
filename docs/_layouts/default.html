@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "محول الأيقونات" }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description | default: "تطبيق ويب احترافي لتحويل الصور إلى أيقونات" }}{% endif %}">
+    <meta name="author" content="{{ site.author | default: "أحمد عنتر" }}">
+    <meta name="email" content="{{ site.email | default: "ahmed30anter@gmail.com" }}">
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "محول الأيقونات" }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description | default: "تطبيق ويب احترافي لتحويل الصور إلى أيقونات" }}{% endif %}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/icon-converter-preview.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "محول الأيقونات" }}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description | default: "تطبيق ويب احترافي لتحويل الصور إلى أيقونات" }}{% endif %}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/icon-converter-preview.png">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="{{ site.pwa.theme_color | default: "#4A90E2" }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="{{ site.pwa.short_name | default: "Icon Converter" }}">
+    <meta name="application-name" content="{{ site.pwa.name | default: "محول الأيقونات" }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
+    <link rel="manifest" href="{{ site.url }}/manifest.json">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    {% if site.google_analytics %}
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="{{ '/' | relative_url }}" class="brand-link">
+                        <i class="fas fa-image"></i>
+                        <span>{{ site.pwa.name | default: "محول الأيقونات" }}</span>
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <a href="{{ '/' | relative_url }}" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>الرئيسية</span>
+                    </a>
+                    <a href="{{ '/about/' | relative_url }}" class="nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>حول</span>
+                    </a>
+                    <a href="{{ '/features/' | relative_url }}" class="nav-link">
+                        <i class="fas fa-star"></i>
+                        <span>المميزات</span>
+                    </a>
+                    <a href="{{ '/contact/' | relative_url }}" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>اتصل بنا</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>محول الأيقونات</h3>
+                <p>تطبيق ويب احترافي لتحويل الصور إلى أيقونات مع دعم كامل لأدوات الوصول والمساعدة.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}">الرئيسية</a></li>
+                    <li><a href="{{ '/features/' | relative_url }}">المميزات</a></li>
+                    <li><a href="{{ '/about/' | relative_url }}">حول</a></li>
+                    <li><a href="{{ '/contact/' | relative_url }}">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> {{ site.email | default: "ahmed30anter@gmail.com" }}</li>
+                    <li><i class="fas fa-phone"></i> 01010389600</li>
+                    <li><i class="fas fa-globe"></i> <a href="https://buytuk.com">BuyTuk.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 {{ site.author | default: "أحمد عنتر" }} - BuyTuk. جميع الحقوق محفوظة.</p>
+            <p>بنيت بـ <i class="fas fa-heart"></i> باستخدام Jekyll و GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('{{ '/sw.js' | relative_url }}')
+                .then(registration => {
+                    console.log('Service Worker registered successfully:', registration);
+                })
+                .catch(error => {
+                    console.log('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+</body>
+</html>
