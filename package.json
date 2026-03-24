@@ -1,0 +1,49 @@
+{
+  "name": "icon-converter",
+  "version": "1.0.0",
+  "description": "تطبيق ويب احترافي لتحويل الصور إلى أيقونات مع دعم كامل لأدوات الوصول والمساعدة",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Build completed - Static site ready'",
+    "serve": "python -m http.server 8000",
+    "test": "echo 'No tests specified' && exit 0",
+    "lint": "echo 'No linting specified' && exit 0",
+    "format": "echo 'No formatting specified' && exit 0"
+  },
+  "keywords": [
+    "icon-converter",
+    "image-converter",
+    "pwa",
+    "accessibility",
+    "arabic",
+    "rtl",
+    "web-app",
+    "offline",
+    "responsive"
+  ],
+  "author": {
+    "name": "أحمد عنتر",
+    "email": "ahmed30anter@gmail.com",
+    "url": "https://buytuk.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/icon-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/icon-converter/issues"
+  },
+  "homepage": "https://yourusername.github.io/icon-converter",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
