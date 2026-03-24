@@ -10,7 +10,9 @@
     "serve": "python -m http.server 8000",
     "test": "echo 'No tests specified' && exit 0",
     "lint": "echo 'No linting specified' && exit 0",
-    "format": "echo 'No formatting specified' && exit 0"
+    "format": "echo 'No formatting specified' && exit 0",
+    "ci": "npm ci",
+    "install": "npm install --no-optional --no-audit --no-fund"
   },
   "keywords": [
     "icon-converter",
@@ -45,5 +47,7 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "optionalDependencies": {},
+  "devDependencies": {}
 }
