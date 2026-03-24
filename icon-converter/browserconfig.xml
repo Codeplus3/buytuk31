@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHZpZXdCb3g9IjAgMCA3MCA3MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiByeD0iOCIgZmlsbD0iIzRBOTBFMiIvPgo8c3ZnIHdpZHRoPSIzNSIgaGVpZ2h0PSIzNSIgdmlld0JveD0iMCAwIDM1IDM1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjE3LjUiIHk9IjE3LjUiPgo8cGF0aCBkPSJNNSAxMEgxN1YyNUg1VjEweiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTggMTJIMTJWMjNIOFYxMnoiIGZpbGw9IiM0QTkwRTIiLz4KPHBhdGggZD0iTTEwIDE0SDEyVjE5SDEwVjE0eiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cjwvc3ZnPgo="/>
+            <square150x150logo src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiByeD0iMTgiIGZpbGw9IiM0QTkwRTIiLz4KPHN2ZyB3aWR0aD0iNzUiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA3NSA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4PSIzNy41IiB5PSIzNy41Ij4KPHBhdGggZD0iTTEwIDE1SDM1VjYwSDEwVjE1eiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTE3IDI1SDI4VjUwSDE3VjI1eiIgZmlsbD0iIzRBOTBFMiIvPgo8cGF0aCBkPSJNMjEgMzBIMjRWNDVIMjFWMzB6IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4KPC9zdmc+Cg=="/>
+            <TileColor>#4A90E2</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
