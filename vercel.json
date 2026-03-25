@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "framework": null,
   "buildCommand": "echo 'Static site ready'",
   "outputDirectory": "docs",
   "routes": [
@@ -8,10 +7,5 @@
       "src": "/(.*)",
       "dest": "/docs/$1"
     }
-  ],
-  "cleanUrls": true,
-  "regions": ["hkg1"],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
