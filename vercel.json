@@ -1,19 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "echo 'Static site - no build needed'",
+  "buildCommand": "echo \"Static site - no build needed\"",
   "outputDirectory": "docs",
-  "installCommand": "echo 'No dependencies to install'",
+  "installCommand": "echo \"No dependencies to install\"",
   "framework": null,
-  "functions": {},
   "cleanUrls": true,
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/docs/$1"
-    }
-  ],
-  "regions": ["hkg1"],
-  "env": {
-    "NODE_ENV": "production"
-  }
+    { "src": "/(.*)", "dest": "/docs/$1" }
+  ]
 }
