@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "تطبيق ويب احترافي لتحويل الصور إلى أيقونات مع دعم كامل لأدوات الوصول والمساعدة",
   "main": "index.html",
+  "packageManager": "npm@10.9.2",
+  "engines": {
+    "npm": ">=10.9.2",
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "start": "python -m http.server 8000",
     "dev": "python -m http.server 3000",
@@ -33,15 +38,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/icon-converter.git"
+    "url": "https://github.com/Codeplus3/buytuk31.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/icon-converter/issues"
+    "url": "https://github.com/Codeplus3/buytuk31/issues"
   },
-  "homepage": "https://yourusername.github.io/icon-converter",
-  "engines": {
-    "node": ">=14.0.0"
-  },
+  "homepage": "https://buytuk31.pages.dev",
   "browserslist": [
     "> 1%",
     "last 2 versions",
