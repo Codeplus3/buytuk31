@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "nodeVersion": "20.x",
+        "maxOldSpaceSize": 3072
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/docs/$1"
+    }
+  ],
+  "cleanUrls": true
+}
