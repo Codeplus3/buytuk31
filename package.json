@@ -1,17 +1,13 @@
 {
   "name": "icon-converter",
   "version": "1.0.0",
-  "description": "تطبيق ويب احترافي لتحويل الصور إلى أيقونات مع دعم كامل لأدوات الوصول والمساعدة",
+  "description": "تطبيق ويب احترافي لتحويل الصور إلى أيقونات",
   "main": "index.html",
   "packageManager": "npm@10.9.2",
-  "engines": {
-    "npm": ">=10.9.2",
-    "node": ">=18.0.0"
-  },
   "scripts": {
+    "build": "echo 'Static site ready'",
     "start": "python -m http.server 8000",
     "dev": "python -m http.server 3000",
-    "build": "echo 'Build completed - Static site ready'",
     "serve": "python -m http.server 8000",
     "test": "echo 'No tests specified' && exit 0",
     "lint": "echo 'No linting specified' && exit 0",
