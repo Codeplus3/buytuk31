@@ -1,33 +1,19 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "nodeVersion": "18.x",
-        "maxOldSpaceSize": 4096,
-        "installCommand": "npm ci --prefer-offline --no-audit",
-        "buildCommand": "echo 'Build completed - Static site ready'"
-      }
-    }
-  ],
+  "buildCommand": "echo 'Static site - no build needed'",
+  "outputDirectory": "docs",
+  "installCommand": "echo 'No dependencies to install'",
+  "framework": null,
+  "functions": {},
+  "cleanUrls": true,
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/docs/$1"
     }
   ],
-  "cleanUrls": true,
-  "functions": {},
-  "framework": null,
-  "outputDirectory": "docs",
-  "installCommand": "npm ci --prefer-offline --no-audit",
-  "buildCommand": "echo 'Build completed - Static site ready'",
-  "devCommand": "echo 'Development mode - Static site ready'",
-  "regions": ["hkg1", "sin1"],
+  "regions": ["hkg1"],
   "env": {
-    "NODE_ENV": "production",
-    "NODE_OPTIONS": "--max-old-space-size=4096"
+    "NODE_ENV": "production"
   }
 }
