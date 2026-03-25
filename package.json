@@ -3,17 +3,10 @@
   "version": "1.0.0",
   "description": "تطبيق ويب احترافي لتحويل الصور إلى أيقونات",
   "main": "index.html",
-  "packageManager": "npm@10.9.2",
   "scripts": {
     "build": "echo 'Static site ready'",
     "start": "python -m http.server 8000",
-    "dev": "python -m http.server 3000",
-    "serve": "python -m http.server 8000",
-    "test": "echo 'No tests specified' && exit 0",
-    "lint": "echo 'No linting specified' && exit 0",
-    "format": "echo 'No formatting specified' && exit 0",
-    "ci": "npm ci",
-    "install": "npm install --no-optional --no-audit --no-fund"
+    "dev": "python -m http.server 3000"
   },
   "keywords": [
     "icon-converter",
@@ -36,16 +29,5 @@
     "type": "git",
     "url": "https://github.com/Codeplus3/buytuk31.git"
   },
-  "bugs": {
-    "url": "https://github.com/Codeplus3/buytuk31/issues"
-  },
-  "homepage": "https://buytuk31.pages.dev",
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead",
-    "not ie 11"
-  ],
-  "optionalDependencies": {},
-  "devDependencies": {}
+  "homepage": "https://buytuk31.pages.dev"
 }
