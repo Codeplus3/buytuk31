@@ -3,7 +3,6 @@
   "framework": null,
   "buildCommand": "echo 'Static site ready'",
   "outputDirectory": "docs",
-  "installCommand": "npm ci",
   "routes": [
     {
       "src": "/(.*)",
