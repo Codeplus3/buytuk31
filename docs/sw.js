@@ -3,8 +3,7 @@ const CACHE_NAME = 'icon-converter-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/manifest.json',
-  '/buytuk.css'
+  '/manifest.json'
 ];
 
 // Install event - cache resources
